@@ -93,6 +93,6 @@ To practice what you’ve learned, complete the following steps and take screens
   Updated learning journal
   **DONE**
 
-[Check my Journal here.](./python-for-web-developers-learning-journal.txt)
+[Check my Journal here.](./Copy%20of%20python-for-web-developers-learning-journal.txt)
 
 - 9 Submit the link to your GitHub repo here for review. **DONE**

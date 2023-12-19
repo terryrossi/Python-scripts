@@ -162,10 +162,10 @@ Write your script here. (Hint: remember what you learned about indents!)
 
 destination = input(“Enter your Destination : “)
 available_destinations = [“paris”, “london”, “new york’]
-If (destination in available_destinations):
+If (destination.lower()  in available_destinations):
      print(“Enjoy your stay in”, destination)
 else:
-    print(“
+    print(“Oops! That destination is not available”) 
 
 
 
@@ -183,12 +183,15 @@ else:
 	
 
    2. Imagine you’re at a job interview for a Python developer role. The interviewer says “Explain logical operators in Python”. Draft how you would respond.
+   1. Logical operators are essential in programming as they allow multiple conditions to be joined and tested simultaneously. The core of computer programming is to test conditions and to take different actions based on the results (True or False which is historically also the core of binary programming 0 or 1).
 
 
    3. What are functions in Python? When and why are they useful?
+   1. Functions in python (and most of the other main languages) are also at the core of programming. They allow you to gather blocks of codes to be called as many times as necessary to execute  tasks. They are useful to keep the code clean and DRY (Don’t repeat Yourself). Especially for repetitive tasks.
 
 
    4. In the section for Exercise 1 in this Learning Journal, you were asked in question 3 to set some goals for yourself while you complete this course.  In preparation for your next mentor call, make some notes on how you’ve progressed towards your goals so far.
+   1. I haven’t progressed more than before as I already knew what we are going through. This was just a nice refresher course on python which I’ve learned 2-3 years ago and haven’t practiced much since then.
 Exercise 1.4: File Handling in Python
 Learning Goals
 
