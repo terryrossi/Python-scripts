@@ -38,13 +38,16 @@ while more_recipes.lower() == 'y': # While loop to keep adding more recipes
   recipe = take_recipe() # Call to the function that creates a new recipe
 
   # Calculate the recipe difficulty:
-  if (recipe["cooking_time"] < 10) and len(recipe["ingredients"]) < 4:
+  cooking_time = recipe["cooking_time"]
+  nb_ingredients = len(recipe["ingredients"])
+
+  if (cooking_time < 10) and nb_ingredients < 4:
     recipe["difficulty"] = "Easy"
-  elif (recipe["cooking_time"] < 10) and len(recipe["ingredients"]) >= 4:
+  elif (cooking_time < 10) and nb_ingredients >= 4:
     recipe["difficulty"] = "Medium"
-  elif (recipe["cooking_time"] >= 10) and len(recipe["ingredients"]) < 4:
+  elif (cooking_time >= 10) and nb_ingredients < 4:
     recipe["difficulty"] = "Intermediate"
-  elif (recipe["cooking_time"] >= 10) and len(recipe["ingredients"]) >= 4:
+  elif (cooking_time >= 10) and nb_ingredients >= 4:
     recipe["difficulty"] = "Hard"
 
   recipes_list.append(recipe) # add the new recipe to the recipes_list
