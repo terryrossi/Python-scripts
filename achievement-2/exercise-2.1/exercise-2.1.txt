@@ -1,0 +1,48 @@
+﻿Achievement 2
+
+
+
+
+1. Create a text document where you can write your answers to the following questions. You’ll want to do some research online to help you develop your answers.
+2. Write two to three sentences on why Django is so popular among web developers.
+   * Django is highly popular among web developers due to its "batteries-included" approach, providing a comprehensive set of tools and features out-of-the-box to build robust and scalable web applications efficiently. Its emphasis on the DRY (Don't Repeat Yourself) principle and a clean, pragmatic design encourages rapid development, allowing developers to focus more on writing the unique parts of their application without reinventing the wheel. Additionally, Django's strong community support and extensive documentation make it accessible for newcomers and a reliable choice for professionals.
+3. After some research, list five large companies that use Django. Specify what the company’s product or service is and what they use Django for.
+
+
+Here are five large companies that use Django for their development projects:
+1. Instagram: A popular social media platform for sharing photos and videos. Instagram is known for its large-scale deployment of Django.
+2. National Geographic: A well-known television network and magazine series that focuses on delivering educational content in areas like science, culture, and history. National Geographic's website, especially its Education page, relies on Django.
+3. Mozilla: The nonprofit organization behind the Firefox browser. Mozilla uses Django to handle large amounts of traffic and API hits efficiently.
+4. Spotify: A widely-used audio streaming service. Spotify employs Django in some of its back-end services and data analysis processes.
+5. Pinterest: Another social media platform, primarily used for sharing and finding inspiration for topics related to fashion, home, cooking, and more. Pinterest utilizes Django’s open-source capabilities to tailor its platform to its needs​​.
+
+
+4. For each of the following scenarios, explain if you would use Django (and why or why not):
+   * You need to develop a web application with multiple users.
+      1. Yes I would use Django to quickly and efficiently develop a web app that will handle authentication, permissions and user groups. It also has excellent performances for large numbers of concurrent users and it’s easy to scale.
+   * You need fast deployment and the ability to make changes as you proceed.
+      1. Yes, with considerations. Django allows for relatively fast deployment due to its "batteries-included" approach, offering many ready-to-use features. However, it might be less flexible for rapid changes compared to micro-frameworks if those changes deviate significantly from Django's way of doing things (its opinionated nature).
+   * You need to build a very basic application, which doesn’t require any database access or file operations.
+      1. No. Django is not needed for applications not requiring a database.
+   * You want to build an application from scratch and want a lot of control over how it works.
+      1. I would not pick Django as it is less flexible compared to other frameworks if those changes deviate significantly from Django's way of doing things (its opinionated nature).
+   * You’re about to start working on a big project and are afraid of getting stuck and needing additional support.
+      1. Yes definitely. Django is a good choice for large projects due to its scalability and robustness. Moreover, it has a large and active community, which means it’ll be easier to find support, documentation, and resources if we encounter challenges or need help during development. This community support can be invaluable for a big project.
+5. Download and install Python (if you haven’t done so already).
+   * Run the appropriate command to check the Python version.
+      1. Python version 3.8.7
+   * Take a screenshot of the terminal window with the command and version and paste it into your answers document.
+      1. See below
+6. Open a new terminal window and go to the folder where you want to create your projects.
+7. If you haven’t done so already, set up and create a virtual environment and name it achievement2-practice. Then:
+   * Activate the virtual environment.
+   * Take a screenshot of the activated environment and paste it into your answers document.
+      1. See below
+8. Install Django and verify the installation by checking the version. Then:
+   * Take a screenshot of the terminal with the command and version.
+   * Paste it into your answers document.
+      1. See below
+9. Export your document as a PDF.
+10. You can continue working on your learning journal! You'll update the journal for each Exercise as you move through this Achievement.
+11. In the GitHub repository that you created in Achievement 1, create a folder for this Achievement (if not done already) and name it “Achievement 2”. Create a subfolder for your Exercise (“Exercise 2.1”) and upload the PDF and learning journal to this folder.
+12. Share the GitHub link to the “Exercise 2.1” folder with your mentor for review.
