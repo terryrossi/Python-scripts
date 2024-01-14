@@ -21,11 +21,7 @@ from sqlalchemy import Column, Integer, String
 
 engine = create_engine('mysql://cf-python:password@localhost/task_database')
 
-# engine = create_engine('mysql://cf-python:password@localhost/task_database', echo=True)
-
 Base = declarative_base()
-
-# Create the table
 
 Base.metadata.create_all(engine)
 
@@ -61,7 +57,7 @@ Store the declarative base class into a variable called Base. Then, begin the de
 
    Example :
    `print("Hello, end="-")
- print("World")`
+print("World")`
    Gives: `Hello-World`
 
 6. Define a method called `calculate_difficulty()` to calculate the difficulty of a recipe based on the number of `ingredients` and `cooking time`. We may copy the same code from the task in the previous Exercise here, with the exception of the last step (where instead of returning the calculated difficulty, the difficulty level is instead assigned to the instance variable `self.difficulty`).
