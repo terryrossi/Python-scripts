@@ -26,7 +26,7 @@ Base = declarative_base()
 Base.metadata.create_all(engine)
 
 Session = sessionmaker(bind=engine)
-session = Session()```
+session = Session() ```
 
 ## Part 2: Create the Model and Table
 
