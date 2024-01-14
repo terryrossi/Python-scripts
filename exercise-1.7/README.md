@@ -14,7 +14,7 @@
 
 5. Make the session object that you’ll use to make changes to the database. To do this, generate the `Session` class, `bind` it to the `engine`, and initialize the `session` object.
 
-``from sqlalchemy import create_engine
+````from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
@@ -26,7 +26,7 @@ Base = declarative_base()
 Base.metadata.create_all(engine)
 
 Session = sessionmaker(bind=engine)
-session = Session()``
+session = Session()```
 
 ## Part 2: Create the Model and Table
 
@@ -195,3 +195,4 @@ The main menu will be contained in a `while` loop, where the condition to exit t
 ## step 6 - Document the work in a “README.md” file.
 
 ## step 8 - Complete learning journal
+````
