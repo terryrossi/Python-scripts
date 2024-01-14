@@ -1,13 +1,16 @@
 class Recipe(object):
 
+  # Class Variable
   all_ingredients = []
 
+  # Constructor
   def __init__(self, name):
     self.name = name
     self.ingredients = []
     self.cooking_time = 0
     self.calc_difficulty()
-    
+
+  # Getters and Setters  
   def set_name(self, name):
     self.name = name
   def get_name(self):
@@ -36,16 +39,19 @@ class Recipe(object):
   #############################################################
   # Method to add ingredients to the list of Ingredients of All Recipes
   def update_all_ingredients(self):
-     for ingredient in self.ingredients:
+    for ingredient in self.ingredients:
         if ingredient not in Recipe.all_ingredients:
           Recipe.all_ingredients.append(ingredient)
+    Recipe.all_ingredients.sort()
 
   #############################################################
   # Method to add ingredients to the recipe's list of ingredients
-  def add_ingredients(self, ingredients):
+  def add_ingredients(self, ingredients): 
+    
     for ingredient in ingredients:
         if ingredient not in self.ingredients:
-           self.ingredients.append(ingredient)
+            self.ingredients.append(ingredient)
+    self.ingredients.sort()
     self.update_all_ingredients()
      
   
@@ -82,12 +88,11 @@ class Recipe(object):
   # This method should be a static Method as it involves several Recipe objects
   @staticmethod
   def list_all_ingredients():
-    
-      output = "\n\nIngredients of all Recipes: \n"
-
-      for ingredient in Recipe.all_ingredients:
-         output = output + "\n" + str(ingredient)
-      return output
+    # Recipe.all_ingredients.sort()
+    output = "\n\nIngredients of all Recipes: \n"
+    for ingredient in Recipe.all_ingredients:
+        output = output + "\n" + str(ingredient).capitalize()
+    return output
 
   ############################################################# 
   # Search for recipes that contain aspecific ingredient
@@ -124,7 +129,7 @@ print(coffee)
 # Create cake Object
 cake = Recipe("Cake")
 cake.set_cooking_time(50)
-ingredients= ["Butter", "Sugar", "eggs", "Milk", "Vanilla Essence", "Flour", "Baking Powder"]
+ingredients= ["Butter", "Sugar", "Eggs", "Milk", "Vanilla Essence", "Flour", "Baking Powder"]
 cake.add_ingredients(ingredients)
 print(cake)
 
